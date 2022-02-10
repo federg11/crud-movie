@@ -23,7 +23,7 @@
             <section class="movie-wrap">
                 <% for(let movie of movies) { %>
 
-                <a href="/movies/detail/???">
+                <a href="/movies/detail/<%= movie.id %> ">
                     <article>
 
                         <div class="img-container">
@@ -36,7 +36,7 @@
                                 titulo: <%= movie.title %> 
                             </li>
                             <li>
-                                raiting: <%= movie.raiting %>
+                                raiting: <%= movie.rating %>
                             </li>
                             <li>
                                 genero: <%= movie.genre %> 
