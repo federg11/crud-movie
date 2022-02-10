@@ -4,7 +4,7 @@ const cookieParser = require('cookie-parser');
 //const logger = require('morgan');
 const methodOverride = require("method-override");
 
-const indexRouter = require('./routes/index');
+//const indexRouter = require('./routes/index');
 //const usersRouter = require('./routes/users');
 const moviesRouter = require('./routes/movies');
 
@@ -25,8 +25,8 @@ app.listen(3000, () => {
     console.log("Servidor corriendo en puerto 3000")
 });
 
-app.use('/', indexRouter);
+app.use('/', moviesRouter);
 //app.use('/users', usersRouter);
-app.use('/movies', moviesRouter);
+//app.use('/movies', moviesRouter);
 
 module.exports = app;
